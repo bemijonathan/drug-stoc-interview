@@ -156,7 +156,11 @@
 		</template>
 	</drug-stk-modal-vue>
 	<div class="logo flex items-center w-full justify-between  py-5">
-		<h1 class="text-2xl bold">LOGO</h1>
+		<img
+			src="https://mlunljhpcxk5.i.optimole.com/tEejJp0.3RiX~22d0/w:auto/h:auto/q:auto/https://www.drugstoc.com/wp-content/uploads/2019/06/logo-new.png"
+			width="200"
+			class="-my-5"
+		/>
 		<div class="">
 			<button
 				aria-label="button"
@@ -255,7 +259,7 @@ export default {
 
 			if (this.v$.$silentErrors.length) {
 				this.v$.$silentErrors.forEach((e) => {
-					this.$toast.error(e.$property + ' ' + e.$message);
+					this.$toast.error(e.$property + " " + e.$message);
 				});
 				return;
 			}
