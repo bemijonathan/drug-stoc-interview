@@ -37,7 +37,7 @@ export default createStore({
     searchTask(state, payload) {
       state.term = payload
       console.log('help')
-      if (payload === '') {
+      if (payload !== '') {
         const reg = new RegExp(payload, 'ig')
         state.Tasks.data = state.cloneTask.data.filter(e => {
           if (reg.test(e.title)) {
